@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>Alterar cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="clients.nome" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email"
+                [(ngModel)]="clients.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cpf"
+                [(ngModel)]="clients.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Sexo</mat-label>
+            <mat-select>
+                <mat-option name="sexo" *ngFor="let i of sexo" [value]="i.value">
+                {{i.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+       
+    </form>
+    <button mat-raised-button (click)="updateProduct()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelProduct()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+
+

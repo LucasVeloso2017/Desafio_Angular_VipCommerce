@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>Deletar Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="client.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email"
+                [(ngModel)]="client.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cpf"
+                [(ngModel)]="client.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Sexo"
+                [(ngModel)]="client.sexo" name="sexo">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteProduct()" color="warn">
+        Deletar
+    </button>
+    <button mat-raised-button (click)="cancelProduct()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+
+
+

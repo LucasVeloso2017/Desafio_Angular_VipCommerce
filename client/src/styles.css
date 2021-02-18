@@ -1,19 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red {
+    color: #e35e6b;
 }
-body {
-    background:#f5f8fb;
-    -webkit-font-smoothing: antialiased;
-} 
-a {
-    text-decoration: none;
+
+.v-middle {
+    vertical-align: middle;
 }
-ul {
-    list-style: none;
+
+.msg-success {
+    background-color: #28a745;
+    color: #fff;
 }
-button {
-    cursor: pointer;
+
+.msg-error {
+    background-color: #e35e6b;
+    color: #fff;
 }
