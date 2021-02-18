@@ -1,0 +1,19 @@
+<div class="menu">
+    <div class="brand">
+        <span>
+            VipCommerce
+            <fa-icon style="color: white;font-size:12px;" [icon]="faCopyright"></fa-icon>
+        </span>
+    </div>
+
+    <aside class="SideBar">
+        <ul class="SideBarList">
+            <li id='row' *ngFor="let i of menuData">
+                <a href={{i.link}}>
+                    <div  id="icon"><fa-icon style="color: white;font-size: 20px;" [icon]="i.icon"></fa-icon></div>
+                    <div id="title"><span class="word">{{i.title}}</span></div>
+                </a>
+            </li>
+        </ul>
+    </aside>
+</div>

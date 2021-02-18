@@ -1,0 +1,14 @@
+.container-fluid{
+    padding: 50px;
+}
+.pull-right{
+    width: 100%;
+    height:100px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pull-right button{
+    margin-right: 20px;
+}
